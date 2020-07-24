@@ -6,6 +6,7 @@ install: install-poetry
 
 .PHONY: install-ci
 install-ci: install-pip-poetry
+	poetry config virtualenvs.create false
 	poetry install
 
 .PHONY: install-poetry
