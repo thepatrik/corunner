@@ -2,8 +2,6 @@ import inspect
 from dataclasses import dataclass
 from typing import Any, Callable, List
 
-from . import stats
-
 
 @dataclass(frozen=True)
 class Coro:

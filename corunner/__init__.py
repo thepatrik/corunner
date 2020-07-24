@@ -1,7 +1,7 @@
-from .group import Group
+from .group import Group  # noqa
 from .report import Report
 from .report_parser import str_parse
-from .runner import run
+from .runner import run  # noqa
 
 
 def echo(report: Report):

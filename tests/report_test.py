@@ -69,9 +69,9 @@ def test_has_execution():
     report = _get_report()
 
     assert report.has_execution('test1')
-    assert report.has_execution('test2') == False
+    assert not report.has_execution('test2')
     assert report.has_execution('test2', include_errored=True)
-    assert report.has_execution('kalle', include_errored=False) == False
+    assert not report.has_execution('kalle', include_errored=False)
 
 
 def test_child_report():

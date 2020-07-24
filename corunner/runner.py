@@ -2,7 +2,7 @@ import asyncio
 import contextlib
 import inspect
 import time
-from typing import Any, Awaitable, Callable, List, Optional
+from typing import Any, Awaitable, Callable, List
 
 import click_spinner
 
