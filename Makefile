@@ -2,6 +2,7 @@
 
 .PHONY: install
 install: install-poetry
+	poetry env use python3.8
 	poetry install
 
 .PHONY: install-ci
@@ -12,12 +13,10 @@ install-ci: install-pip-poetry
 .PHONY: install-poetry
 install-poetry:
 	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3
-	poetry env use python3.8
 
 .PHONY: install-pip-poetry
 install-pip-poetry:
 	pip install poetry
-	poetry env use python3.8
 
 .PHONY: fmt
 fmt:
