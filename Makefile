@@ -26,6 +26,7 @@ fmt:
 .PHONY: lint
 lint:
 	poetry run mypy corunner tests
+	poetry run flake8 corunner tests
 
 .PHONY: test
 test:
