@@ -29,7 +29,7 @@ async def f_3():
 async def f_4():
     raise ValueError('Whoops...')
 
-report = corunner.run(co_group, duration=2, users=2) # runs for 2 seconds with 2 virtual users
+report = corunner.run(co_group, duration=2, users=5) # runs for 2 seconds with 5 virtual users (default)
 corunner.echo(report)
 ```
 
