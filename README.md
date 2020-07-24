@@ -1,5 +1,7 @@
 # corunner
 
+![Build Status](https://github.com/thepatrik/corunner/workflows/corunner/badge.svg)
+
 A simple runner for Python coroutines.
 
 ```python
